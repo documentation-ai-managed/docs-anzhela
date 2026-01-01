@@ -1,0 +1,128 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Anzhela, ensuring you stay informed on new features and fixes.
+---
+
+## Recent Updates
+
+Stay current with Anzhela's evolution. Review the latest releases below to understand new capabilities, enhancements, and resolved issues. Each version includes detailed changelogs to help you upgrade smoothly.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for shared documentation editing
+- Introduced version history with diff viewer for tracking changes
+- Integrated custom domains for branded documentation sites
+
+## Improvements
+
+- Enhanced search performance by `>50%` with full-text indexing
+- Optimized image handling for faster page loads
+
+## Bug Fixes
+
+- Fixed markdown rendering issues with nested lists
+- Resolved authentication token refresh failures during long sessions
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Launched AI-powered content suggestions for documentation drafts
+- Added export to PDF and HTML formats
+
+## Improvements
+
+- Streamlined sidebar navigation with drag-and-drop reordering
+- Improved mobile responsiveness for documentation previews
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## Initial Release
+
+- Core documentation workspace with page organization and search
+- User authentication and team permissions
+- Basic markdown editor with preview
+
+## Breaking Changes
+
+- Updated API endpoints to use `/v1/` prefix
+
+</Update>
+
+## Upgrade Instructions
+
+Upgrade Anzhela to the latest version using these steps. You receive automatic notifications in your dashboard at `https://dashboard.example.com`.
+
+<Steps>
+  <Step title="Check Current Version" icon="package">
+    Run the following command to verify your installed version:
+    
+````bash
+anzhela --version
+````
+  </Step>
+  <Step title="Backup Data" icon="database">
+    Export your documentation:
+    
+    <CodeGroup tabs="CLI,Dashboard">
+    ````bash
+    anzhela export --all > backup.json
+    ````
+    ````javascript
+    // From dashboard.example.com
+    // Click Export > Full Backup
+    ````
+    </CodeGroup>
+  </Step>
+  <Step title="Update Package" icon="download">
+    <Tabs>
+      <Tab title="npm" icon="package">
+````bash
+npm update anzhela-sdk@latest
+````
+      </Tab>
+      <Tab title="yarn" icon="package">
+````bash
+yarn upgrade anzhela-sdk@latest
+````
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Verify" icon="check-circle">
+    Restart your instance and test core features.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Review the migration guide for v1.2.0 if you encounter deprecated API usage. Visit your dashboard for personalized upgrade paths.
+</Callout>
+
+## Upcoming Features
+
+Preview what's next for Anzhela. These enhancements focus on automation and integrations.
+
+<Columns cols={3}>
+  <Card title="Workflow Automation" icon="zap" href="/docs/workflows">
+    Build custom pipelines for doc approvals and deployments.
+  </Card>
+  <Card title="Git Sync" icon="github" href="/docs/git-sync">
+    Two-way synchronization with GitHub repositories.
+  </Card>
+  <Card title="Advanced Analytics" icon="bar-chart-3" href="/docs/analytics">
+    Track documentation usage and engagement metrics.
+  </Card>
+</Columns>
+
+## Stay Informed
+
+Subscribe to release announcements via email or RSS at `https://docs.example.com/rss`. Follow us on GitHub for early access to betas.
+
+<Callout kind="info">
+  Found an issue? Report it at `https://github.com/example/anzhela/issues`. Your feedback drives improvements.
+</Callout>

@@ -1,0 +1,121 @@
+---
+title: Getting Started with Anzhela
+description: Set up your Anzhela account and create your first documentation space in just a few minutes.
+---
+
+## Prerequisites
+
+<Callout kind="info">
+
+Before you begin, ensure you have:
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: A GitHub account for advanced integrations
+
+</Callout>
+
+## Step 1: Sign Up for Anzhela
+
+Follow these steps to create your account quickly.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="monitor">
+    Open your browser and navigate to `https://app.anzhela.com`.
+  </Step>
+  <Step title="Start Registration" icon="user-plus">
+    Click the **Sign Up** button in the top right corner.
+    
+    Fill in your email, password, and display name.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email from Anzhela.
+    
+    Click the link to activate your account.
+  </Step>
+</Steps>
+
+## Step 2: Log In and Create Your First Space
+
+Once verified, log in and set up your documentation space.
+
+<Steps>
+  <Step title="Log In" icon="log-in">
+    Return to `https://app.anzhela.com` and enter your credentials.
+  </Step>
+  <Step title="Create Space" icon="plus">
+    Click **New Space** on the dashboard.
+    
+    Enter a name like "My Project Docs" and select a template (e.g., "Default").
+  </Step>
+  <Step title="Customize Settings" icon="settings">
+    Add a description and set visibility to "Private" or "Public".
+    
+    Save to access your new space editor.
+  </Step>
+</Steps>
+
+## Basic Interface Tour
+
+The Anzhela interface includes key areas for efficient documentation management.
+
+<Tabs>
+  <Tab title="Editor" icon="edit-3">
+    The central pane where you write MDX content. Supports live preview, syntax highlighting, and version history.
+  </Tab>
+  <Tab title="Sidebar" icon="sidebar">
+    Navigation to pages, spaces, and settings. Drag to reorder pages.
+  </Tab>
+  <Tab title="Preview" icon="eye">
+    Real-time rendering of your docs. Toggle between desktop and mobile views.
+  </Tab>
+</Tabs>
+
+## Upload Your Initial Content
+
+Add your first page using markdown or MDX.
+
+<CodeGroup tabs="Markdown,MDX">
+  ```markdown
+  # Welcome to My Docs
+  
+  This is your first page.
+  
+  ## Features
+  - Live editing
+  - Version control
+  ```
+  ```tsx
+  ---
+  title: Welcome Page
+  ---
+  
+  ## Hello World
+  
+  <Callout kind="success">
+    You're all set!
+  </Callout>
+  ```
+</CodeGroup>
+
+Copy the content above into the editor, save as "index.mdx", and preview.
+
+<Callout kind="tip">
+  Use the upload button to import existing markdown files directly from your computer or GitHub repo.
+</Callout>
+
+## Next Steps
+
+<Columns cols={3}>
+  <Card title="Explore Features" icon="zap" href="/introduction">
+    Dive into advanced editing and collaboration tools.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your spaces with API keys and webhooks.
+  </Card>
+  <Card title="Customization" icon="settings" href="/configuration">
+    Configure themes and integrations.
+  </Card>
+</Columns>
+
+You're now ready to build your documentation! For more, check the [full docs](/introduction).
